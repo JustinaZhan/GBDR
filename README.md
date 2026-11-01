@@ -4,6 +4,10 @@ GBDR (Granular-ball Density Ratio) is a weakly supervised anomaly detector. A gr
 
 `gbdr.py` contains the core algorithm. Dependencies: NumPy, SciPy, and scikit-learn.
 
+## Acknowledgment
+
+We gratefully acknowledge [Professor Mingjie Cai](https://github.com/HNU-MingjieCai), our advisor, for his guidance and support throughout this work.
+
 ## Usage
 
 ```python
@@ -16,6 +20,4 @@ scores = model.decision_function(X)  # Higher scores indicate anomalies.
 
 Inputs are finite, two-dimensional numerical attribute matrices with the same preprocessing. Exclude the labeled anomalies in `S` from `U`. By default, the regularization parameter is selected from `{0.1, 1, 10}` using the labeled anomalies; one labeled anomaly uses `1`.
 
-## Acknowledgment
 
-We gratefully acknowledge [Professor Mingjie Cai](https://github.com/HNU-MingjieCai), our advisor, for his guidance and support throughout this work.
